@@ -1,1 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Devin Wickens Mix – Professional Audio Mixing</title>
 
+  <style>
+    :root {
+      --purple: #6a0dad;
+      --purple-light: #9b6bd6;
+      --bg-dark: #0e0b14;
+      --bg-card: #181222;
+      --text-main: #f4f1fa;
+      --text-muted: #b9b4c8;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: linear-gradient(180deg, #0e0b14, #120d1c);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    a {
+      color: var(--purple-light);
+      text-decoration: none;
+    }
+
+    section {
+      padding: 80px 20px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    h1, h2, h3 {
+      margin-bottom: 20px;
+      line-height: 1.2;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding-top: 120px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      background: linear-gradient(90deg, var(--purple), var(--purple-light));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero p {
+      max-width: 700px;
+      margin: 20px auto 40px;
+      color: var(--text-muted);
+      font-size: 1.1rem;
+    }
+
+    .hero-btn {
+      background: var(--purple);
+      padding: 15px 30px;
+      border-radius: 40px;
+      color: #fff;
+      font-weight: bold;
+      display: inline-block;
+      transition: transform 0.2s, box-shadow 0.2s;
+      box-shadow: 0 0 25px rgba(106,13,173,0.5);
+    }
+
+    .hero-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 0 40px rgba(106,13,173,0.8);
+    }
+
+    /* CARDS */
+    .card {
+      background: var(--bg-card);
+      padding: 40px;
+      border-radius: 18px;
+      box-shadow: 0 0 30px rgba(106,13,173,0.15);
+      margin-bottom: 40px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* SOUNDCLOUD */
+    .soundcloud iframe {
+      border-radius: 12px;
+      box-shadow: 0 0 25px rgba(106,13,173,0.3);
+    }
+
+    /* REVIEW */
+    .review {
+      border-left: 4px solid var(--purple);
+      padding-left: 20px;
+      font-style: italic;
+    }
+
+    /* CONTACT */
+    form input, form textarea {
+      width: 100%;
+      padding: 14px;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      border: none;
+      background: #0e0b14;
+      color: #fff;
+      font-size: 1rem;
+    }
+
+    form button {
+      background: var(--purple);
+      color: #fff;
+      padding: 14px;
+      width: 100%;
+      border: none;
+      border-radius: 40px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    form button:hover {
+      background: var(--purple-light);
+    }
+
+    /* STICKY CTA */
+    .sticky-cta {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: linear-gradient(135deg, var(--purple), var(--purple-light));
+      padding: 16px 26px;
+      border-radius: 50px;
+      color: #fff;
+      font-weight: bold;
+      box-shadow: 0 0 30px rgba(106,13,173,0.7);
+      z-index: 999;
+    }
+
+    /* FOOTER */
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      color: var(--text-muted);
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Devin Wickens Mix</h1>
+    <p>
+      Professional music mixing, dialogue editing, and audio post-production.
+      Over 25 years of experience helping artists hit the sweet spot.
+    </p>
+    <a href="#contact" class="hero-btn">Get Your Mix Started</a>
+  </section>
+
+  <!-- ABOUT -->
+  <section>
+    <div class="card">
+      <h2>About & Services</h2>
+      <p>
+        Sound is what I love to do. There are moments where you hit that sweet spot —
+        and everyone knows it. I live for those moments. That’s my job: making them happen.
+      </p>
+      <ul>
+        <li>Music mixing & production</li>
+        <li>Dialogue editing & post mixing</li>
+        <li>Vocal comping & cleanup</li>
+        <li>25+ years professional experience</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- REVIEW -->
+  <section>
+    <div class="card review">
+      <h2>Client Review</h2>
+      <p>
+        ⭐⭐⭐⭐⭐<br><br>
+        “Devin is a top tier audio engineer! I was unsure at first because he primarily
+        specialized in rock music, and I was looking for something in the R&B genre.
+        His work proved just how fit he is for any job and showcased his versatility.
+        The result was amazing! I recommend Devin for anyone trying to take their music
+        to the next level.”
+      </p>
+      <p><strong>— Faris Badaro (Verified SoundBetter Review)</strong></p>
+    </div>
+  </section>
+
+  <!-- SOUNDCLOUD -->
+  <section class="soundcloud">
+    <div class="card">
+      <h2>Listen to My Work</h2>
+      <iframe
+        width="100%"
+        height="450"
+        scrolling="no"
+        frameborder="no"
+        allow="autoplay"
+        src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/devin-wickens&color=%236a0dad&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&visual=true">
+      </iframe>
+      <p style="color:var(--text-muted); margin-top:10px;">
+        Featuring the latest tracks from my SoundCloud.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="card">
+      <h2>Get in Touch</h2>
+      <form action="mailto:wickens.devin@gmail.com" method="POST" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="5" placeholder="Tell me about your project…" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- STICKY CTA -->
+  <a href="#contact" class="sticky-cta">🎧 Get Your Mix Started</a>
+
+  <!-- FOOTER -->
+  <footer>
+    © <span id="year"></span> Devin Wickens Mix ·
+    <a href="https://soundcloud.com/devin-wickens" target="_blank">SoundCloud</a> ·
+    <a href="mailto:wickens.devin@gmail.com">Email</a>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+
+</body>
+</html>
